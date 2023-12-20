@@ -12,7 +12,8 @@ Stm32F405VET6
 
 the project is  under early development so there are some bugs
 
-to run the project 
+to run the project ...
+
 
 
 
