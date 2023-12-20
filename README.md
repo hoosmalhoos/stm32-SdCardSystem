@@ -10,6 +10,7 @@ Stm32F405VET6
 
 ![7923300-1](https://github.com/hoosmalhoos/stm32-SdCardSystem/assets/38074334/0d723f65-5447-42f9-9789-ac3dbee7d15e)
 
+the project is  early underdevelopment so there is some bugs
 
 to run the project 
 
