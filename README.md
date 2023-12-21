@@ -40,7 +40,7 @@ compile code:
 - run debug mode
 
 - ### helpful resource
-this was created with the help of [controllerstech git](https://github.com/controllerstech/stm32-uart-ring-buffe) 
+this was created with the help of [controllerstech git](https://github.com/controllerstech/stm32-uart-ring-buffer) 
 and [YouTube SD card using SDIO in STM32](https://www.youtube.com/watch?v=dgCfM0CZpBA&t=288s).
 
 
