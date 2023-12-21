@@ -35,9 +35,11 @@ This project implements an STM32-based system that interacts with an SD card usi
 
 compile code:
 - make sure to import the project
-- power STM32 development board via usb and hook it up into STM32 Debugger ST-LINK/V2 throw SWD Connection ,i used stm32,Recommended Stm32F4xx Series where it has SDIO featured
-- run debug mode [note that somtimes it ]
-### helpful resource
+- power STM32 development board via usb and hook it up into STM32 Debugger ST-LINK/V2 throw SWD  mode Connection ,i
+- Recommended Stm32F4xx Series which it has SDIO featured
+- run debug mode
+
+- ### helpful resource
 this was created with the help of [controllerstech git](https://github.com/controllerstech/stm32-uart-ring-buffe) 
 and [YouTube SD card using SDIO in STM32](https://www.youtube.com/watch?v=dgCfM0CZpBA&t=288s).
 
