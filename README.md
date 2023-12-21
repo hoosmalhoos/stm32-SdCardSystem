@@ -14,6 +14,19 @@ the project is  under early development so there are some bugs
 
 to run the project ...
 
+i recommend using ([stm32cubeide](https://www.st.com/en/development-tools/stm32cubeide.html)) for easier implentation
 
+
+1-download this code by 
+
+
+
+
+
+
+
+
+
+compile code:
 
 
