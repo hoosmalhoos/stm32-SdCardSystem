@@ -27,15 +27,15 @@ This project implements an STM32-based system that interacts with an SD card usi
    git clone https://github.com/hoosmalhoos/stm32-SdCardSystem/tree/main
    
 
-this was created with the help of [controllerstech git](https://github.com/controllerstech/stm32-uart-ring-buffe) 
-and [YouTube SD card using SDIO in STM32](https://www.youtube.com/watch?v=dgCfM0CZpBA&t=288s).
-
-
-
 
 
 
 
 compile code:
+
+### helpful resource
+this was created with the help of [controllerstech git](https://github.com/controllerstech/stm32-uart-ring-buffe) 
+and [YouTube SD card using SDIO in STM32](https://www.youtube.com/watch?v=dgCfM0CZpBA&t=288s).
+
 
 
