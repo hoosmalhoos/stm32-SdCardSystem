@@ -6,6 +6,7 @@ This project implements an STM32-based system that interacts with an SD card usi
 
 - **Controller:** STM32 (STM32F407VET6)
 - **Development Environment:** STM32CubeIDE
+![7923300-1](https://github.com/hoosmalhoos/stm32-SdCardSystem/assets/38074334/5c115e4e-a712-44d1-b685-53bbd0e84adf)
 
 ## Features
 
