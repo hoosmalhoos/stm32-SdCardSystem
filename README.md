@@ -27,11 +27,6 @@ This project implements an STM32-based system that interacts with an SD card usi
 
    ```bash
    git clone https://github.com/hoosmalhoos/stm32-SdCardSystem/tree/main
-   
-
-
-
-
 
 compile code:
 - make sure to import the project
