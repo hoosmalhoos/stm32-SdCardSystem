@@ -39,7 +39,7 @@ compile code:
 - Recommended Stm32F4xx Series which it has SDIO featured
 - run debug mode
 
-- ### helpful resource
+### helpful resource
 this was created with the help of [controllerstech git](https://github.com/controllerstech/stm32-uart-ring-buffer) 
 and [YouTube SD card using SDIO in STM32](https://www.youtube.com/watch?v=dgCfM0CZpBA&t=288s).
 
