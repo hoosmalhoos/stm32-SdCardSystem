@@ -19,7 +19,7 @@ This project implements an STM32-based system that interacts with an SD card usi
 ### Prerequisites
 
 - STM32CubeIDE installed
-- Appropriate STM32 hardware or development board
+- Appropriate STM32 hardware or development board (STM32F4xx series or any SDIO featured)
 
 ### Setting up the Project
 
