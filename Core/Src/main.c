@@ -107,13 +107,120 @@ int main(void)
   /* USER CODE END 2 */
 
   /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
+
   while (1)
   {
-	  HAL_GPIO_TogglePin(GPIOA, GPIO_Pin_6|GPIO_Pin_7);
-    HAL_Delay(1000);
+	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6|GPIO_PIN_7);
+	  HAL_Delay(100);
+    while(IsDataAvailable())
+    {
+    	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_SET);
+    	Get_string(buffer);
+    	int len= cmdlength(buffer);
+    	get_path();
+
+    	if(!(strncmp("ls",buffer,len)))cmd='l';
+    	if(!(strncmp("mkdir",buffer,len)))cmd='m';
+    	if(!(strncmp("mkfil",buffer,len)))cmd='c';
+    	if(!(strncmp("read",buffer,len)))cmd='r';
+    	if(!(strncmp("write",buffer,len)))cmd='w';
+    	if(!(strncmp("rm",buffer,len)))cmd='d';
+    	if(!(strncmp("update",buffer,len)))cmd='u';
+    	if(!(strncmp("checkfile",buffer,len)))cmd='f';
+    	if(!(strncmp("checksd",buffer,len)))cmd='s';
+
+
+    	switch (cmd)
+    	{
+		case ('l'):
+		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6|GPIO_PIN_7);
+		HAL_Delay(20);
+		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6|GPIO_PIN_7);
+				scan_files(path);
+				cmd=0;
+				clear_path();
+				clear_buffer();
+				break;
+		case ('m'):
+		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
+				HAL_Delay(20);
+				HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
+				create_dir(path);
+				cmd=0;
+				clear_path();
+						break;
+		case ('c'):
+		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
+				HAL_Delay(20);
+				HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
+				        create_dir(path);
+						cmd=0;
+						clear_path();
+						break;
+		case ('r'):
+		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
+						HAL_Delay(20);
+						HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
+
+				        read_file(path);
+						cmd=0;
+			     		clear_path();
+						break;
+		case ('w'):
+		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
+						HAL_Delay(20);
+						HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
+				write_file(path);
+								cmd=0;
+								clear_path();
+						break;
+
+		case ('d'):
+		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
+						HAL_Delay(20);
+						HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
+
+                        remove_file(path);
+		                cmd=0;
+						clear_path();
+						break;
+		case ('u'):
+		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
+						HAL_Delay(20);
+						HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
+
+	                    update_file(path);
+		                cmd=0;
+						clear_path();
+						break;
+		case ('f'):
+		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
+						HAL_Delay(20);
+						HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
+
+						check_file(path);
+		                cmd=0;
+						clear_path();
+						break;
+		case ('s'):
+				HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
+		HAL_Delay(20);
+		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_6);
+
+						check_sd();
+	                	cmd=0;
+						clear_path();
+						break;
+
+		default:
+			clear_buffer();
+			clear_path();
+			break;
+
+    	}
+    }
   }
-  /* USER CODE END 3 */
+
 }
 
 /**
