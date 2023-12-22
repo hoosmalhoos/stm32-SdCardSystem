@@ -30,8 +30,8 @@ This project implements an STM32-based system that interacts with an SD card usi
 
 compile code:
 - make sure to import the project
-- power STM32 development board via usb and hook it up into STM32 Debugger ST-LINK/V2 throw SWD  mode Connection ,i
-- Recommended Stm32F4xx Series which it has SDIO featured
+- power STM32 development board via USB and hook it up to STM32 Debugger ST-LINK/V2 throw SWD  mode Connection
+- Recommended Stm32F4xx Series which has SDIO featured
 - run debug mode
 
 ### helpful resource
